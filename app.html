@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dashboard UI/UX Design!
+    </title>
+    <!--Links de estilo(CSS)-->
+    <link href="./img/icons/dashborded.svg" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+    <!--Google icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+    <!--javascript-->
+    <script defer src="app.js"></script>
+    <!--Script tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+<body class="w-screen font-[poppins] overflow-x-hidden">
+    <header class="flex justify-between mx-3 h-16 items-center bg-stone-100">
+        <section class="flex items-center">
+            <img src="/img/icons/dashborded.svg" alt="img" class="w-12  h-12">
+            <h1 class="font-semibold text-xl text-stone-500 mt-2">Dashbord UI/UX</h1>
+        </section>
+            <section>
+                <nav class="flex items-center">
+                    <button  class="hidden">
+                        <img src="/img/icons/menu.svg" alt="menu" class="w-10 h-10 m-2 border-[1px] border-stone-500 rounded-lg ">
+                    </button>
+                    <div class="flex items-center">
+                        <button onclick="batata()">aaaa</button>
+                        <div id="search" class=" phone:inline-block rounded-full   border-stone-600 border-[1px] w-12 relative overflow-hidden">
+                            <input type="text" class="w-auto h-12 rounded-full">
+                            <img src="/img/icons/search.svg" alt="" class="absolute right-[11px] top-[13px] select-none ">
+                            <p  id="textPesquisar" class="absolute top-3 left-56 transition-all ">pesquisar...</p>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+    </header>
+</body>
+</html>
